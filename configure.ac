@@ -157,6 +157,7 @@ AS_IF([test "x$with_docs_only" = xyes],
      m4_include([config/m4/nccl.m4])
      m4_include([config/m4/mpi.m4])
      m4_include([config/m4/configure.m4])
+     m4_include([config/m4/tl_coll_plugins.m4])
      m4_include([test/gtest/configure.m4])
 
      mc_modules=":cpu"
@@ -188,6 +189,7 @@ CFLAGS="$CFLAGS -std=gnu11"
 CPPFLAGS="$CPPFLAGS $UCS_CPPFLAGS $includes"
 LDFLAGS="$LDFLAGS $UCS_LDFLAGS $UCS_LIBADD"
 
+CHECK_TL_COLL_PLUGINS
 AC_CONFIG_FILES([
                  Makefile
                  src/Makefile

@@ -1,0 +1,3 @@
+[submodule "src/components/tl/ucp/coll_plugins/custom"]
+	path = src/components/tl/ucp/coll_plugins/custom
+	url = /labhome/valentinp/workspace/UCC_PLUGIN/plugin
